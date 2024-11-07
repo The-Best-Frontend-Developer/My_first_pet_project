@@ -10,7 +10,7 @@
     --green-hover: #91ac46;
     --red: #e24949;
 
-    --transition: 0.3s 50ms;
+    --transition: 0.3s;
 }
 
 @font-face {
@@ -41,18 +41,27 @@ svg *[fill] { fill: currentColor }
 svg *[stroke] { stroke: currentColor }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: “Cormorant”, sans-serif;
+    font-family: 'Cormorant', sans-serif;
     font-weight: 700;
 }
 
 button {
-    font-family: “Open Sans”, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    cursor: pointer;
 }
 
 p, a {
-    font-family: “Open Sans”, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--background);
 }
 
 button {
@@ -62,7 +71,7 @@ button {
 }
 
 .page__header {
-    background-color: var(--background);
+    position: relative;
     height: 60px;
 }
 
@@ -92,7 +101,7 @@ button {
     margin-left: -125px;
 }
 
-.header__navigation-link {
+.header__navigation-link, .burger-menu-link {
     padding: 3px;
     color: var(--white);
     transition: var(--transition);
@@ -132,6 +141,56 @@ button {
     flex-flow: wrap;
     white-space: nowrap;
     margin-top: 15px;
+}
+
+.burger-menu {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.burger-menu__button {
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+
+.burger-menu__svg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.burger-menu__svg.active {
+    display: block;
+}
+
+.burger-menu__list {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    width: 130px;
+    height: 116px;
+}
+
+.burger-menu__list.active {
+    display: flex;
+}
+
+.burger-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .first-section {
@@ -180,50 +239,13 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 174px;
-    height: 27px;
+    gap: 8px;
     stroke-width: 2px;
     font-size: 16px;
     color: var(--primary-green);
     margin-left: -10px;
     padding: 10px;
     transition: var(--transition);
-}
-
-.header__navigation-link:hover {
-    color: var(--primary-green);
-}
-
-.header__navigation-link:active {
-    color: var(--green-activeclick);
-}
-
-.header__navigation-link:focus-visible {
-    outline: 1px solid var(--green-focus);
-}
-
-.header__button:hover {
-    color: #91AC46;
-}
-
-.header__button:focus-visible {
-    outline: 1px solid var(--green-focus);
-}
-
-.header__button:active {
-    color: #688B05;
-}
-
-.first-section__button:hover {
-    color: var(--green-hover);
-}
-
-.first-section__button:focus-visible {
-    outline: 1px solid var(--green-focus);
-}
-
-.first-section__button:active {
-    color: var(--green-activeclick);
 }
 
 @media (max-width: 1200px) {
@@ -243,12 +265,6 @@ button {
         display: none;
     }
 
-    .header__navigation-list-2 {
-        display: flex;
-        gap: 32px;
-        row-gap: 15px;
-    }
-
     .container {
         padding-inline: 32px;
     }
@@ -260,13 +276,13 @@ button {
     .first-section__paragraph {
         font-size: 14px;
     }
+
+    .burger-menu {
+        display: flex;
+    }
 }
 
 @media (max-width: 600px) {
-    .header__navigation-list-2 {
-        margin-inline: auto;
-    }
-
     .header__buttons {
         gap: 32px;
     }
@@ -286,4 +302,52 @@ button {
     .first-section__paragraph {
         display: none;
     }
+}
+
+/*Привет, пупсик*/
+
+@media (hover: hover) {
+    .header__navigation-link:hover, .burger-menu-link:hover {
+        color: var(--primary-green);
+    }
+
+    .header__button:hover {
+        color: #91AC46;
+    }
+
+    .first-section__button:hover {
+        color: var(--green-hover);
+    }
+
+    .burger-menu__button:hover {
+        color: var(--green-hover);
+    }
+}
+
+.header__navigation-link:active, .burger-menu-link:active {
+    color: var(--green-activeclick);
+}
+
+.header__navigation-link:focus-visible {
+    outline: 1px solid var(--green-focus);
+}
+
+.header__button:active {
+    color: #688B05;
+}
+
+.header__button:focus-visible {
+    outline: 1px solid var(--green-focus);
+}
+
+.first-section__button:active {
+    color: var(--green-activeclick);
+}
+
+.first-section__button:focus-visible {
+    outline: 1px solid var(--green-focus);
+}
+
+.burger-menu__button:active {
+    color: #688B05;
 }

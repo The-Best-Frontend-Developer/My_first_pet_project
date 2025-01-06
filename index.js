@@ -2,16 +2,33 @@ const burgerMenuButtonSvg = document.querySelectorAll(".burger-menu__svg")
 const burgerMenuButton = document.querySelector(".burger-menu__button")
 const burgerMenuList = document.querySelector(".burger-menu__list")
 const slider = document.querySelector('.slider')
-const slidesContainer = document.querySelector(".slider-slides")
 const slides = document.querySelectorAll(".slider-slide")
 const totalSlides = slides.length
 const previousButton = document.querySelector(".slider__previous-button")
 const nextButton = document.querySelector(".slider__next-button")
-const currentSlide = document.querySelector(".current-slide")
+let currentSlide = document.querySelector(".current-slide")
 let currentIndex = -1
 let autoScrollInterval;
 let userInteractionTimeout;
-const screenWidth = window.innerWidth
+let currentSlider;
+let screenWidth = window.innerWidth
+
+const getCurrentSlider = () => {
+    screenWidth = window.innerWidth
+    if (screenWidth >= 1200) {
+        return '';
+    } else if (screenWidth < 1200 && screenWidth >= 930) {
+        return '2';
+    } else if (screenWidth < 930 && screenWidth >= 600) {
+        return '3';
+    } else {
+        return '4';
+    }
+};
+
+currentSlider = getCurrentSlider();
+
+let slidesContainer = document.querySelector(`.slider${currentSlider}-slides`)
 
 
 
@@ -21,17 +38,20 @@ burgerMenuButton.addEventListener('click', () => {
 })
 
 previousButton.addEventListener('click', () => {
-    prevSlide()
+    prevSlide();
 })
 
 nextButton.addEventListener('click', () => {
-    nextSlide()
+    nextSlide();
 })
 
 const startAutoScroll = () => {
-    autoScrollInterval = setInterval(() => {
-        showSlide(currentIndex + 1);
-    }, 4000);
+    screenWidth = window.innerWidth
+    if (screenWidth >= 930) {
+        autoScrollInterval = setInterval(() => {
+            showSlide(currentIndex + 1);
+        }, 4000);
+    }
 };
 
 const stopAutoScroll = () => {
@@ -60,6 +80,10 @@ const showSlide = (index) => {
         currentIndex = index;
     }
 
+    currentSlider = getCurrentSlider();
+
+    slidesContainer = document.querySelector(`.slider${currentSlider}-slides`)
+
     if (currentIndex === -1) {
         slidesContainer.style.transform = 'translateX(33.3%)';
         currentSlide.innerText = '1 из 3'
@@ -80,7 +104,15 @@ function prevSlide() {
     showSlide(currentIndex - 1);
 }
 
-if (screenWidth >= 1200) {
+window.addEventListener('resize', () => {
     showSlide(currentIndex);
+    stopAutoScroll();
+    startAutoScroll();
+})
+
+
+showSlide(currentIndex);
+
+if (screenWidth >= 930) {
     restartAutoScrollWithDelay();
 }

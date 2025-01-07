@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="+слайдер и третья секция, без адаптива">
+    <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="Адаптив слайдера">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,7 @@
       <workItem from="1732382247182" duration="464000" />
       <workItem from="1734358622837" duration="1917000" />
       <workItem from="1735572648241" duration="9000" />
-      <workItem from="1735934078933" duration="44681000" />
+      <workItem from="1735934078933" duration="49402000" />
     </task>
     <task id="LOCAL-00001" summary="+слайдер и третья секция, без адаптива">
       <option name="closed" value="true" />
@@ -116,7 +116,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736111601845</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Адаптив слайдера">
+      <option name="closed" value="true" />
+      <created>1736201536237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736201536237</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Адаптив слайдера">
+      <option name="closed" value="true" />
+      <created>1736201642993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736201642994</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+слайдер и третья секция, без адаптива" />
-    <option name="LAST_COMMIT_MESSAGE" value="+слайдер и третья секция, без адаптива" />
+    <MESSAGE value="Адаптив слайдера" />
+    <option name="LAST_COMMIT_MESSAGE" value="Адаптив слайдера" />
   </component>
 </project>

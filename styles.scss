@@ -378,14 +378,23 @@ button {
     color: var(--white);
 }
 
+.third-section__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
 .third-section__headline {
+    width: 100%;
     font: italic Bold 48px var(--second-family);
     color: var(--white);
 }
 
 .third-section__images {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--background-shade);
     width: 825px;
@@ -445,13 +454,6 @@ button {
     top: 269px;
 }
 
-.third-section__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
 .third-section-information {
     position: relative;
     display: flex;
@@ -483,6 +485,36 @@ button {
     color: var(--background-shade);
 }
 
+@media (max-width: 1439px) {
+    .third-section__image3, .third-section__image4 {
+        display: none;
+        position: absolute;
+    }
+
+    .third-section__images {
+        justify-content: center;
+        width: 550px;
+        gap: 30px;
+    }
+
+    .third-section__image1 {
+        margin-left: 50px;
+    }
+
+    .third-section__image2 {
+        margin-right: 50px;
+    }
+
+    .third-section__image5 {
+        margin: 0;
+    }
+
+    .third-section__image6 {
+        margin-right: 0;
+    }
+
+}
+
 @media (max-width: 1200px) {
     .container {
         padding-inline: 70px;
@@ -506,6 +538,15 @@ button {
 @media (max-width: 1080px) {
     .header__navigation-list {
         margin-left: 0;
+    }
+
+    .third-section__images {
+        width: 450px;
+    }
+
+    .third-section__image5 {
+        display: none;
+        position: absolute;
     }
 }
 
@@ -540,6 +581,24 @@ button {
         display: flex;
         position: relative;
     }
+
+    .third-section__image1, .third-section__image2 {
+        margin: 0;
+    }
+
+    .third-section__images {
+        width: 300px;
+    }
+
+    .third-section__image6 {
+        display: none;
+        position: absolute;
+    }
+
+    .third-section__image7 {
+        display: none;
+        position: absolute;
+    }
 }
 
 @media (max-width: 700px) {
@@ -549,6 +608,16 @@ button {
 
     .burger-menu {
         display: flex;
+    }
+
+    .third-section__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third-section__images {
+        display: none;
+        position: absolute;
     }
 }
 

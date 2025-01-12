@@ -2,12 +2,14 @@ const burgerMenuButtonSvg = document.querySelectorAll(".burger-menu__svg")
 const burgerMenuButton = document.querySelector(".burger-menu__button")
 const burgerMenuList = document.querySelector(".burger-menu__list")
 const slider = document.querySelector('.slider')
-const slides = document.querySelectorAll(".slider-slide")
-const totalSlides = slides.length
 const previousButton = document.querySelector(".slider__previous-button")
 const nextButton = document.querySelector(".slider__next-button")
 let currentSlide = document.querySelector(".current-slide")
-let currentIndex = -1
+let currentSlideMobileChildren = document.querySelectorAll('.current-slide-mobile__item')
+let totalSlides = 3
+let currentIndex = 0
+let startX = 0;
+let endX;
 let autoScrollInterval;
 let userInteractionTimeout;
 let currentSlider;
@@ -22,6 +24,7 @@ const getCurrentSlider = () => {
     } else if (screenWidth < 930 && screenWidth >= 600) {
         return '3';
     } else {
+        totalSlides = 4
         return '4';
     }
 };
@@ -43,6 +46,31 @@ previousButton.addEventListener('click', () => {
 
 nextButton.addEventListener('click', () => {
     nextSlide();
+})
+
+slider.addEventListener('touchstart', (event) => {
+    currentSlider = getCurrentSlider();
+    if (currentSlider === '4') {
+        const touch = event.touches[0];
+        startX = touch.clientX;
+    }
+})
+
+slider.addEventListener('touchend', (event) => {
+
+    currentSlider = getCurrentSlider();
+    if (currentSlider === '4') {
+        const touch = event.changedTouches[0];
+        endX = touch.clientX;
+
+        const diffX = endX - startX;
+
+        if (diffX > 30) {
+            showSlide4(currentIndex - 1);
+        } else if (diffX < -30) {
+            showSlide4(currentIndex + 1);
+        }
+    }
 })
 
 const startAutoScroll = () => {
@@ -72,28 +100,58 @@ slider.addEventListener("mouseleave", restartAutoScrollWithDelay);
 
 
 const showSlide = (index) => {
-    if (index < -1) {
-        currentIndex = totalSlides - 2;
-    } else if (index >= totalSlides - 1) {
-        currentIndex = -1;
+    if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (index >= totalSlides) {
+        currentIndex = 0;
     } else {
         currentIndex = index;
     }
 
     currentSlider = getCurrentSlider();
 
+    if (currentSlider === 4) {
+        showSlide4(currentIndex);
+    }
+
     slidesContainer = document.querySelector(`.slider${currentSlider}-slides`)
 
-    if (currentIndex === -1) {
-        slidesContainer.style.transform = 'translateX(33.3%)';
-        currentSlide.innerText = '1 из 3'
-    } else if (currentIndex === 0) {
+    if (currentIndex === 0) {
         slidesContainer.style.transform = 'translateX(0%)';
+        currentSlide.innerText = '1 из 3'
+    } else if (currentIndex === 1) {
+        slidesContainer.style.transform = 'translateX(-33.33%)';
         currentSlide.innerText = '2 из 3'
-    } else {
-        slidesContainer.style.transform = 'translateX(-33.3%)';
+    } else if (currentIndex === 2) {
+        slidesContainer.style.transform = 'translateX(-66.66%)';
         currentSlide.innerText = '3 из 3'
     }
+}
+
+const showSlide4 = (index) => {
+    if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (index >= totalSlides) {
+        currentIndex = 0;
+    } else {
+        currentIndex = index;
+    }
+
+    if (currentIndex === 0) {
+        slidesContainer.style.transform = 'translateX(0%)';
+    } else if (currentIndex === 1) {
+        slidesContainer.style.transform = 'translateX(-25%)';
+    } else if (currentIndex === 2) {
+        slidesContainer.style.transform = 'translateX(-50%)';
+    } else if (currentIndex === 3) {
+        slidesContainer.style.transform = 'translateX(-75%)';
+    }
+
+    currentSlideMobileChildren.forEach(el =>
+        el.classList.remove('active')
+    );
+
+    currentSlideMobileChildren[currentIndex].classList.add('active')
 }
 
 function nextSlide() {

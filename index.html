@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet</title>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Cormorant-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="normalize-styles.css">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
@@ -30,7 +30,7 @@
             </nav>
             <div class="burger-menu">
                 <button class="burger-menu__button">
-                    <svg class="burger-menu__svg active" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11066)"> <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11066"> <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"></rect> </clipPath> </defs> </g></svg>
+                    <svg class="burger-menu__svg active" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11066)"> <path d="M3 6.00092h31M3 12.0009h31M3 18.0009h31" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11066"> <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"></rect> </clipPath> </defs> </g></svg>
                     <svg class="burger-menu__svg" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -66,9 +66,9 @@
     </header>
     <main>
         <h1 class="visually-hidden">Природные артефакты</h1>
-        <section class="first-section">
+        <section class="section section--background section-hero" style="background-image: url('images/flowers.png');">
             <div class="container first-section__container">
-                <h2 class="main__headline">
+                <h2 class="first-section__headline">
                     Крупнейшая коллекция<br/>
                     природных артефактов
                 </h2>
@@ -84,459 +84,528 @@
                 </button>
             </div>
         </section>
-        <section class="second-section">
+        <section class="section">
             <div class="container second-section__container">
                 <div class="slider">
-                    <div class="slider-slides">
-                        <div class="slider-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
+                    <div class="slider-slides-container">
+                        <div class="slider-slides">
+                            <div class="slider-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
                                         </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 1 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 1 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
                                         </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 2 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
                                         </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 3 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.4</p>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 2 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
                                         </div>
-                                        <img src="images/slide-image-4.png" alt="wood">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 4 (wood)</h2>
-                                        <p class="slider-card__description">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 3 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.4</p>
+                                            </div>
+                                            <img src="images/slide-image-4.png" alt="wood">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 4 (wood)</h3>
+                                            <p class="slider-card__description">Базовый вектор развития не даёт нам
+                                                иного выбора, кроме определения новых предложений.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 5 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 6 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 7 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.4</p>
+                                            </div>
+                                            <img src="images/slide-image-4.png" alt="wood">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 8 (wood)</h3>
+                                            <p class="slider-card__description">Базовый вектор развития не даёт нам
+                                                иного выбора, кроме определения новых предложений.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 9 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 10 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 11 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.4</p>
+                                            </div>
+                                            <img src="images/slide-image-4.png" alt="wood">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 12 (wood)</h3>
+                                            <p class="slider-card__description">Базовый вектор развития не даёт нам
+                                                иного выбора, кроме определения новых предложений.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="slider-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
-                                        </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 5 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
-                                        </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 6 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
-                                        </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 7 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.4</p>
-                                        </div>
-                                        <img src="images/slide-image-4.png" alt="wood">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 8 (wood)</h2>
-                                        <p class="slider-card__description">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="slider-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
-                                        </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 9 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
-                                        </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 10 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
-                                        </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 11 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.4</p>
-                                        </div>
-                                        <img src="images/slide-image-4.png" alt="wood">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 12 (wood)</h2>
-                                        <p class="slider-card__description">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
 
-                    <div class="slider2-slides">
-                        <div class="slider2-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
+                        <div class="slider2-slides">
+                            <div class="slider2-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
                                         </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 1 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 1 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
                                         </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 2 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
                                         </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 3 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 2 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 3 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider2-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 4 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 5 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 6 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider2-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 7 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 8 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 9 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="slider2-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
-                                        </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 4 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
-                                        </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 5 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
-                                        </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 6 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="slider2-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
-                                        </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 7 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
-                                        </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 8 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
-                                        </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 9 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
 
-                    <div class="slider3-slides">
-                        <div class="slider3-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
+                        <div class="slider3-slides">
+                            <div class="slider3-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
                                         </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 1 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 1 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
                                         </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 2 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 2 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider3-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 3 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 4 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider3-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 5 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 6 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="slider3-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
-                                        </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 3 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
-                                        </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 4 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="slider3-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
-                                        </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 5 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
-                                        </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 6 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
 
-                    <div class="slider4-slides">
-                        <div class="slider4-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">2.4</p>
+                        <div class="slider4-slides">
+                            <div class="slider4-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">2.4</p>
+                                            </div>
+                                            <img src="images/slide-image-1.png" alt="green leaf">
                                         </div>
-                                        <img src="images/slide-image-1.png" alt="green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 1 (plant)</h2>
-                                        <p class="slider-card__description">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="slider4-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">3.1</p>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 1 (plant)</h3>
+                                            <p class="slider-card__description">Имеется спорная точка зрения, гласящая
+                                                примерно следующее: активно развивающиеся страны третьего мира
+                                                своевременно верифицированы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
                                         </div>
-                                        <img src="images/slide-image-2.png" alt="red flower">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 2 (flower)</h2>
-                                        <p class="slider-card__description">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="slider4-slide">
-                            <ul class="slider-cards">
-                                <li class="slider-card">
-                                    <div class="slider-card__image">
-                                        <div class="slider-card__image-index">
-                                            <p class="index slide-index">1.2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider4-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">3.1</p>
+                                            </div>
+                                            <img src="images/slide-image-2.png" alt="red flower">
                                         </div>
-                                        <img src="images/slide-image-3.png" alt="yellow green leaf">
-                                    </div>
-                                    <div class="slider-card__content">
-                                        <h2 class="slider-card__headline">Fig. 3 (leaf)</h2>
-                                        <p class="slider-card__description">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                                        <button class="slider-card__button">Подробнее</button>
-                                    </div>
-                                </li>
-                            </ul>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 2 (flower)</h3>
+                                            <p class="slider-card__description">Прежде всего, синтетическое тестирование
+                                                влечет за собой процесс внедрения и модернизации условий.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider4-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.2</p>
+                                            </div>
+                                            <img src="images/slide-image-3.png" alt="yellow green leaf">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 3 (leaf)</h3>
+                                            <p class="slider-card__description">Лишь непосредственные участники
+                                                прогресса неоднозначны и будут в равной степени предоставлены сами себе
+                                                для работы.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider4-slide">
+                                <ul class="slider-cards">
+                                    <li class="slider-card">
+                                        <div class="slider-card__image">
+                                            <div class="slider-card__image-index">
+                                                <p class="index slide-index">1.4</p>
+                                            </div>
+                                            <img src="images/slide-image-4.png" alt="wood">
+                                        </div>
+                                        <div class="slider-card__content">
+                                            <h3 class="slider-card__headline">Fig. 4 (wood)</h3>
+                                            <p class="slider-card__description">Базовый вектор развития не даёт нам
+                                                иного выбора, кроме определения новых предложений.</p>
+                                            <a class="slider-card__link">Подробнее</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -547,7 +616,13 @@
                                 <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM26 7L1 7V9L26 9V7Z" fill="CurrentColor"/>
                             </svg>
                         </button>
-                        <p class="current-slide">1 из 3</p>
+                        <h3 class="current-slide">1 из 3</h3>
+                        <ul class="current-slide-mobile">
+                            <li class="current-slide-mobile__item active"></li>
+                            <li class="current-slide-mobile__item"></li>
+                            <li class="current-slide-mobile__item"></li>
+                            <li class="current-slide-mobile__item"></li>
+                        </ul>
                         <button class="slider__next-button">
                             <svg class="next-button__svg" width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.538409 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM-8.74228e-08 9L25 9L25 7L8.74228e-08 7L-8.74228e-08 9Z" fill="CurrentColor"/>
@@ -557,52 +632,55 @@
                 </div>
             </div>
         </section>
-        <section class="third-section">
+        <section class="section">
             <div class="container third-section__container">
                 <h2 class="third-section__headline">Новые артефакты</h2>
-                <div class="third-section__images">
-                    <div class="third-section__image third-section__image1">
-                        <img src="images/third-section1.png" alt="moss" class="image1">
-                        <div class="group-index image1__index">
-                            <p class="index third-section__index1">4.2</p>
-                        </div>
-                    </div>
-                    <div class="third-section__image third-section__image2">
-                        <img src="images/third-section2.png" alt="moss" class="image2">
-                        <div class="group-index image2__index">
-                            <p class="index third-section__index2">7.2</p>
-                        </div>
-                    </div>
-                    <div class="third-section__image third-section__image3">
-                        <img src="images/third-section3.png" alt="wood" class="image3">
-                        <div class="group-index image3__index">
-                            <p class="index third-section__index3">2.7</p>
-                        </div>
-                    </div>
-                    <div class="third-section__image third-section__image4">
-                        <img src="images/third-section4.png" alt="flower" class="image4">
-                        <div class="group-index image4__index">
-                            <p class="index third-section__index4">5.1</p>
-                        </div>
-                    </div>
-                    <div class="third-section__image third-section__image5">
-                        <img src="images/third-section5.png" alt="polypody" class="image5">
-                        <div class="group-index image5__index">
-                            <p class="index third-section__index5">9.1</p>
-                        </div>
-                    </div>
-                    <div class="third-section__image third-section__image6">
-                        <img src="images/third-section6.png" alt="bark" class="image6">
-                        <div class="group-index image6__index">
-                            <p class="index third-section__index6">1.7</p>
-                        </div>
-                    </div>
-                    <div class="third-section__image third-section__image7">
-                        <img src="images/third-section7.png" alt="flower" class="image7">
-                        <div class="group-index image7__index">
-                            <p class="index third-section__index7">2.3</p>
-                        </div>
-                    </div>
+                <div class="third-section__images images">
+                    <ul class="images__list">
+                        <li class="third-section__image">
+                            <img src="images/third-section1.png" alt="moss" class="image1">
+                            <div class="group-index image1__index">
+                                <p class="index third-section__index1">4.2</p>
+                            </div>
+                        </li>
+                        <li class="third-section__image">
+                            <img src="images/third-section2.png" alt="moss" class="image2">
+                            <div class="group-index image2__index">
+                                <p class="index third-section__index2">7.2</p>
+                            </div>
+                        </li>
+                        <li class="third-section__image">
+                            <img src="images/third-section3.png" alt="wood" class="image3">
+                            <div class="group-index image3__index">
+                                <p class="index third-section__index3">2.7</p>
+                            </div>
+                        </li>
+                        <li class="third-section__image" style="margin-inline-end: -5.4375rem">
+                            <img src="images/third-section4.png" alt="flower" class="image4">
+                            <div class="group-index image4__index">
+                                <p class="index third-section__index4">5.1</p>
+                            </div>
+                        </li>
+                        <li class="third-section__image">
+                            <img src="images/third-section5.png" alt="polypody" class="image5">
+                            <div class="group-index image5__index">
+                                <p class="index third-section__index5">9.1</p>
+                            </div>
+                        </li>
+                        <li class="third-section__image">
+                            <img src="images/third-section6.png" alt="bark" class="image6">
+                            <div class="group-index image6__index">
+                                <p class="index third-section__index6">1.7</p>
+                            </div>
+                        </li>
+                        <li class="third-section__image" style="margin-inline-end: -1px">
+                            <img src="images/third-section7.png" alt="flower" class="image7">
+                            <div class="group-index image7__index">
+                                <p class="index third-section__index7">2.3</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="images__mobile">Swipe to see more</p>
                 </div>
                 <div class="third-section-information">
                     <h2 class="information__headline">Kurische Nehrung 24</h2>
@@ -614,6 +692,21 @@
                         </svg>
                     </button>
                 </div>
+            </div>
+        </section>
+        <section class="section section--background" style="background-image: url('images/fourth-section__background-image.png');">
+            <div class="container fourth-section__container">
+                <h2 class="fourth-section__headline">Помочь проекту</h2>
+                <p class="fourth-section__information">Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
+                <form action="" method='post' class="fourth-section__support-form">
+                    <fieldset class="support-form__input-group">
+                        <label class="label" for="user-name-id"></label>
+                        <input id="user-name-id" type="text" maxlength="20" placeholder="Имя" name="user-name-server" class="support-form__input user-name" required>
+                        <label class="label" for="user-email-id"></label>
+                        <input id="user-email-id" type="email" inputmode="email" placeholder="Email" name="user-email-server" class="support-form__input user-email" required>
+                    </fieldset>
+                    <button class="support-form__button" type="submit">Отправить</button>
+                </form>
             </div>
         </section>
     </main>

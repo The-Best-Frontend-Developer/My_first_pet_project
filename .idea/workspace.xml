@@ -4,7 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="Небольшие изменения по всему сайту, изменение контейнера, адаптив слайдера и улучшенный адаптив третьей секции">
+    <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="добавлен футер. сайт закончен">
+      <change afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cormorant-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cormorant-Italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cormorant-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/OpenSans-Italic-VariableFont_wdth,wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/OpenSans-VariableFont_wdth,wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slider-arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/slider-arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_Condensed-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/static/OpenSans_SemiCondensed-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-project1.7z" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
@@ -114,7 +161,7 @@
       <workItem from="1736772006630" duration="493000" />
       <workItem from="1736772619513" duration="2233000" />
       <workItem from="1736775891943" duration="590000" />
-      <workItem from="1736778439584" duration="16277000" />
+      <workItem from="1736778439584" duration="16594000" />
     </task>
     <task id="LOCAL-00001" summary="+слайдер и третья секция, без адаптива">
       <option name="closed" value="true" />
@@ -148,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736715163538</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавлен футер. сайт закончен">
+      <option name="closed" value="true" />
+      <created>1736867608387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736867608387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +224,7 @@
     <MESSAGE value="+слайдер и третья секция, без адаптива" />
     <MESSAGE value="Адаптив слайдера" />
     <MESSAGE value="Небольшие изменения по всему сайту, изменение контейнера, адаптив слайдера и улучшенный адаптив третьей секции" />
-    <option name="LAST_COMMIT_MESSAGE" value="Небольшие изменения по всему сайту, изменение контейнера, адаптив слайдера и улучшенный адаптив третьей секции" />
+    <MESSAGE value="добавлен футер. сайт закончен" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен футер. сайт закончен" />
   </component>
 </project>

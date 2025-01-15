@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="сайт закончен">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-project1.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +115,8 @@
       <workItem from="1736772006630" duration="493000" />
       <workItem from="1736772619513" duration="2233000" />
       <workItem from="1736775891943" duration="590000" />
-      <workItem from="1736778439584" duration="16967000" />
+      <workItem from="1736778439584" duration="17451000" />
+      <workItem from="1736941786534" duration="1781000" />
     </task>
     <task id="LOCAL-00001" summary="+слайдер и третья секция, без адаптива">
       <option name="closed" value="true" />

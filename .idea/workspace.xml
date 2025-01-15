@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="сайт закончен">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
-    </list>
+    <list default="true" id="16561b25-4540-4151-ba8b-d40c4c064b0b" name="Changes" comment="изменение px на rem" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +111,7 @@
       <workItem from="1736772619513" duration="2233000" />
       <workItem from="1736775891943" duration="590000" />
       <workItem from="1736778439584" duration="17451000" />
-      <workItem from="1736941786534" duration="1781000" />
+      <workItem from="1736941786534" duration="2022000" />
     </task>
     <task id="LOCAL-00001" summary="+слайдер и третья секция, без адаптива">
       <option name="closed" value="true" />
@@ -174,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736867793257</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="изменение px на rem">
+      <option name="closed" value="true" />
+      <created>1736944444155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736944444155</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +200,7 @@
     <MESSAGE value="Небольшие изменения по всему сайту, изменение контейнера, адаптив слайдера и улучшенный адаптив третьей секции" />
     <MESSAGE value="добавлен футер. сайт закончен" />
     <MESSAGE value="сайт закончен" />
-    <option name="LAST_COMMIT_MESSAGE" value="сайт закончен" />
+    <MESSAGE value="изменение px на rem" />
+    <option name="LAST_COMMIT_MESSAGE" value="изменение px на rem" />
   </component>
 </project>

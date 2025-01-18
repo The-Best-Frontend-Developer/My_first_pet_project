@@ -67,9 +67,9 @@ slider.addEventListener('touchend', (event) => {
 
         const diffX = endX - startX;
 
-        if (diffX > 30) {
+        if (diffX >= 55) {
             showSlide4(currentIndex - 1);
-        } else if (diffX < -30) {
+        } else if (diffX < -55) {
             showSlide4(currentIndex + 1);
         }
     }
